@@ -1,0 +1,16 @@
+# eureka 总服务中心, 第 一个启动
+server:
+  port: 8001
+  
+spring:
+  application:
+    name: spring-cloud-eureka
+    
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+          
+    
